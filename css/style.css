@@ -133,6 +133,15 @@ body {
   text-decoration: none;
 }
 
+.contact-icon {
+  margin-right: 10px;
+  fill: #757575;
+}
+
+.contact-link:hover .contact-icon,
+.contact-link:focus .contact-icon {
+  fill: var(--accent-color);
+}
 .contacts .contact-link:hover,
 .contacts .contact-link:focus {
   color: var(--accent-color);
@@ -141,10 +150,17 @@ body {
 /*order-service*/
 
 .order-service {
+  width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
-
-  background-color: var(--header-footer-color);
+  margin: 0 auto;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
+  background-color: #c4c4c4;
+  background-position: center;
   text-align: center;
 }
 
@@ -199,6 +215,18 @@ body {
 
 .list-item {
   width: 270px;
+}
+
+.facilities-container-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 30px;
+
+  background: #f5f4fa;
+  border-radius: 4px;
 }
 
 .title-three {
@@ -284,6 +312,9 @@ body {
   padding-bottom: 30px;
 
   background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-name {
   margin-bottom: 10px;
@@ -355,14 +386,15 @@ body {
 
 .customers-list {
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
-  justify-content: space-between;
+}
+.customers-item + .customers-item {
+  margin-left: 30px;
 }
 
 .customers-item {
   display: flex;
-  justify-content: center;
-  align-items: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   width: 170px;
@@ -370,6 +402,12 @@ body {
 }
 
 .customers-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
 }
 
 .customers-soc-icon {
@@ -384,6 +422,9 @@ body {
   border-color: #2196f3;
 }
 
+.customers-link:focus .customers-soc-icon {
+  fill: #2196f3;
+}
 /*footer*/
 
 .footer {
@@ -521,6 +562,9 @@ body {
 .page-nav .button-link:focus {
   background-color: #2196f3;
   color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 /* our projects */
@@ -551,6 +595,13 @@ body {
   display: flex;
   margin-right: 30px;
   margin-bottom: 30px;
+}
+
+.link-img:hover,
+.link-img:focus {
+  box-sizing: border-box;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .item-projects:nth-child(3n) {
